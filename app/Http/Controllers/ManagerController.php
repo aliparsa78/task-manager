@@ -6,10 +6,11 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
 
-class UserController extends Controller
+
+class ManagerController extends Controller
 {
     public function index(){
        $user = Auth::user()->user_type;
-       return view('dashboard');
+       return view('Backend/Manager/index');
     }
 }

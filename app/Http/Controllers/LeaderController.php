@@ -6,7 +6,7 @@ use Illuminate\Http\Request;
 use App\Models\User;
 use Auth;
 
-class UserController extends Controller
+class LeaderController extends Controller
 {
     public function index(){
        $user = Auth::user()->user_type;
