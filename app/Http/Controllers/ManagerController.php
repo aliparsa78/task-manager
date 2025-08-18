@@ -20,7 +20,10 @@ class ManagerController extends Controller
     public function table()
     {
         $taskMembers = DB::table('task_members')
-            ->select('task_id','user_id')
+            ->join('users','task_members.user_id','=','users.id')
+
+
+            ->select('task_members.task_id','users.*')
             ->get()
             ->groupBy('task_id');
 

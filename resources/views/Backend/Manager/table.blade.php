@@ -38,7 +38,7 @@
                           <a href="javascript:;" class="avatar avatar-xs rounded-circle" data-bs-toggle="tooltip" data-bs-placement="bottom" title="Ryan Tompson">
                             <img src="Backend/assets/img/team-1.jpg" alt="team1">
                           </a>
-                          {{$member->user_id}}
+                          {{$member->name}} 
                           @endforeach
                         </div>
                       </td>

@@ -17,7 +17,7 @@
           <ul class="navbar-nav  justify-content-end">
             <a href="profile">
             <li class="nav-item d-flex align-items-center">
-                <span class="d-sm-inline d-none bg-dark bg-gradient-info p-1 rounded text-white"><i class="material-icons mt-1">person</i>{{Auth::user()->name}}</span>
+                <span class="d-sm-inline d-none bg-dark bg-gradient-info p-1 rounded text-white"><i class="material-icons mt-1"></i>Profile</span>
             </li>
             </a>
             <li class="nav-item d-xl-none ps-3 d-flex align-items-center">

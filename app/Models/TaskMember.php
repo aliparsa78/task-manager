@@ -10,7 +10,10 @@ use App\Models\Task;
 class TaskMember extends Model
 {
     use HasFactory;
-    
+    public function members()
+    {
+        return $this->belongsTo(User::class,'id','user_id');
+    }
 
     
 }
